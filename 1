@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main()
+{
+    int sum=0;
+    int k,a,b;
+    printf ("This program prints out everything under k that is divisible by any 2 numbers a and b. \n");
+    printf ("Enter k: ");
+    scanf ("%d" , &k) ;
+    
+    printf ("Enter a: ");
+    scanf ("%d" , &a) ;
+    
+    printf ("Enter b: ");
+    scanf ("%d" , &b) ;
+    
+    int i=0;
+    for (i=0; i<k; i++)
+    {
+        if (i % a == 0 || i % b ==0)
+        {
+            sum+=i;
+        }
+    }
+    printf ("%d \n", sum);
+
+    return 0;
+}
