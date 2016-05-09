@@ -1,0 +1,26 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    cout << "This program prints all the even fibonacci numbers until the kth term which are less than m. k and m is a user inputted number. \n" << endl; 
+    unsigned long long a=1, b=1, cap;
+    int k, sum=0;
+    cout<<"Enter k: ";
+    cin >> k;
+    cout<<"Enter m: ";
+    cin >> m;
+    int i=0;
+     
+    for (i=0; i<=k; i++)
+    {if (a % 2 == 0 && a<=m)
+        {
+            cout<<i<<". "<<a<<endl;
+            sum+=a;
+        }
+        b = a+b;
+        a = b-a;
+    }
+    cout<<"The sum of even fibonacci numbers until "<< k<<" is: "<<sum<<endl;
+   return 0;
+}
