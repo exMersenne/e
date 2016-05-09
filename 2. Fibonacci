@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    cout << "This program prints all the fibonacci numbers until the kth term. k is a user inputted number." << endl; 
+    cout << "This program prints all the fibonacci numbers until the kth term. k is a user inputted number. \n" << endl; 
     unsigned long long a=1, b=1;
     int k;
     cout<<"Enter k: ;"
