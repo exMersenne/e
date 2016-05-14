@@ -1,0 +1,51 @@
+#include <iostream>
+
+using namespace std;
+int CheckPrime(int num);
+
+int main()
+{
+    cout << "This program prints out all the prime factors of the number k. k is an user inputted number. \n" << endl;  
+    unsigned long long k, i, highest; 
+    cout<<"Enter k: "; 
+    cin >> k; 
+    for (i=1; i<=(k/2+1); i++)
+    {
+        if (k%i==0)
+        {
+            if (CheckPrime(i)==0)
+            {
+                cout<<i<<"\t";
+                highest=i;
+            }
+        }
+    }
+   cout << "\n The highest Prime Factor is "<<highest << endl; 
+   
+   return 0;
+}
+
+int CheckPrime(int num)
+{
+    int i, sum=0;
+    for (i=1; i<=(num/2+1); i++)
+    {
+        if (num%i==0)
+        {
+            sum+=1;
+        }
+    }
+    if (sum==1)
+    {
+        return 0;
+    }
+    else
+    {
+        return 1;
+    }
+}
+
+int sort()
+{
+    
+}
