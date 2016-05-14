@@ -6,7 +6,7 @@ int main()
     cout << "This program prints all the fibonacci numbers until the kth term. k is a user inputted number. \n" << endl; 
     unsigned long long a=1, b=1;
     int k;
-    cout<<"Enter k: ;"
+    cout<<"Enter k: ";
     cin >> k;
     int i=0;
     for (i=0; i<=k; i++)
